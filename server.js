@@ -23,7 +23,6 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     is_logged_in: false,
-    
 }))
 
 app.use(passport.initialize())
