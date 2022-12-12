@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Meu Perfil</title>
+    <link rel="shortcut icon" href="../assets/My project-1 (1).png" />
+    
+    
+    <link rel="stylesheet" href="./alterarperfil.css" type="text/css">
+    <script src="./alterarperfil.js" defer></script>
+    
+    <link rel="stylesheet" href="../globals/footer.css">
+    <link rel="stylesheet" href="../globals/header.css">
+    <script src="../globals/auth.js" defer></script>
+    <script src="../globals/sidebar.js" defer></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/69266619cf.js" crossorigin="anonymous"></script>
+</head>
+<style>
+   
+</style>
+<body>
+
+   
+    <div class="success-message-container"></div>
+    <div class="fail-message-container"></div>
+
+    
+
+
+    <%- include("../globals/header.ejs") %>
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <div class="container"></div>
+
+    <div class="container2">
+        <div class="c1">
+              
+            <h2 id="c1-main-name" style="
+            color: rgb(240,238,250);
+            text-align: center;
+            margin-bottom: 8px;
+                text-overflow: ellipsis; overflow: hidden; width: 95%;max-height: 150px;"></h2>
+            
+            <div class=circle>
+                <div class="edit-circle-icon-container">
+                    <i class="fa-solid fa-pencil"></i>
+                </div>
+                <input type="file" name="file" id="files" accept="image/png, image/jpeg, image/jpg">
+                    <img id="circle-change-image-cover" src="" alt="user-profile-pic"
+                    style="width: 100%; height: 100%; border-radius: 50%;"
+                    ></img>
+            </div>
+
+            <div class="warning-about-file-size-container">
+                <p class="warning-about-file-size-text">Faça updload de um novo avatar. Imagens maiores que 
+                    <span style="font-weight: 700;">200Kbs</span> não serão aceitas.</p>
+            </div>
+            <p id="membro-desde" style="margin-top: 15px; font-size: .7em; color: rgb(240, 247, 250);">Membro desde
+                
+                <span id="mes"></span>
+                de
+                <span id="ano"></span>
+            </p>
+     
+                    <!-- <div style="width: 85%; display: flex; align-items: center; justify-content: center; background-color: white; color:rgb(198, 198, 198);">
+                        <p>koasokcakos</p>
+                        <i class="fa-regular fa-copy"
+                            style="cursor: pointer; font-size: 1.1em; color: rgb(106,106,106); margin-left: 5px;"
+                        ></i>
+                    </div>
+       -->
+        </div>
+
+
+        <div class="c2">
+                <h2 class="main-title"  id="ola-message" style="
+                    text-overflow: ellipsis; white-space: nowrap; overflow: hidden;
+                     color:rgb(29,112,37);text-align: start;  width: 100%;">Olá, </h2>
+            <div class="c2-first-container" >
+   
+
+                <div class="user-info-and-advanced-container">
+                    <div class="category-text-container" id="category-user-info" style="border-bottom: 2px solid rgb(126, 176, 28); color: rgb(18,18,18);">
+                        <h3 class="category-text" id="user-info-text">Informações de usuario</h3>
+                    </div>
+                    <div class="category-text-container" id="category-advanced"  style="margin-left:30px;">
+                        <h3 class="category-text" id="avancado-text">Avançado</h3>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="c2-second-container" >
+                <div class="c2-advanced-info">
+                    <!-- <div style="display: flex; justify-content: start;">
+                        <div style="width: 45%; height: 80px; background: rgba(235, 254, 200, 0.865);
+                            border-radius: 12px;
+                            border: 1px solid rgb(126, 176, 28);
+                            display: flex;
+                            align-items: center;
+                            padding: 10px 15px 10px 15px;
+                   
+                        ">
+                        <div style="margin-right: 15px;">
+                            <input style="accent-color: rgb(126, 176, 28);" type="radio" name="user-type" value="default" checked>  
+                        </div>
+                        <div>
+                            <p style="font-size: 1em; margin: 0; font-weight: 700; color: rgb(223, 223, 223);">Usuario Padrao</p>  
+                            <p style="font-size: .7em; margin: 0; font-weight: 600; color:rgb(126, 176, 28);">Sou um usuario sem conhecimentos de produtos organicos</p>  
+                        </div>
+                    </div>
+                    <div style="width: 45%; height: 80px; background: rgb(248, 248, 248);
+                            border-radius: 12px;
+                            border: 1px solid rgb(180, 180, 180);
+                            display: flex;
+                            align-items: center;
+                            padding: 10px 15px 10px 15px;
+                            margin-left: 10px;
+                   
+                        ">
+                        <div style="margin-right: 15px;">
+                            <input style="accent-color: rgb(209, 209, 209);" type="radio" name="user-type" value="produtor">  
+                        </div>
+                        <div>
+                            <p style="font-size: 1em; margin: 0; font-weight: 700; color: rgb(150, 150, 150);">Produtor</p>  
+                            <p style="font-size: .7em; margin: 0; font-weight: 600; color:rgb(150, 150, 150);">Planto produtos e gostaria de divulga-los</p>  
+                        </div>
+                    </div>
+                    </div> -->
+                    <div class="label-and-input-from-c1">
+                        <label for="name">email</label>
+                        <input type="text" disabled value="xiiguilhermeiix@gmail.com" id="profile-email-input" class="input-field">
+                    </div>
+                    
+          
+                    <div class="label-and-input-from-c1">
+                        <label >Alterar Senha</label>
+                        <input type="text" value="" id="profile-password-input" class="input-field">
+                    </div>
+                    <div class="label-and-input-from-c1">
+                        <label >Confirmar Senha</label>
+                        <input type="text" value="" id="profile-confirmar-password-input" class="input-field">
+                    </div>
+                    <!-- <button id="deletar-btn">
+                        <div id="inside-salvar-btn-circle" style="pointer-events: none;"></div>
+                        <div id="deletar-btn" style="pointer-events: none;">Excluir conta</div>
+                    </button> -->
+
+                    <button id="deletar-btn" style="background-color: red;  margin-top: 15px;">
+                        <div id="inside-confirmar-btn-circle" style="pointer-events: none;"></div>
+                        <span id="confirmar-btn-text" style="pointer-events: none;">Excluir conta</span>
+                    </button>
+                </div>
+
+
+                <div class="c2-user-info">
+                <div class="label-and-input-from-c1" style="margin-top: 15px;">
+                    <label for="name">Nome</label>
+                    <input type="text" id="profile-name-input" class="input-field">
+                    </div>
+            <div class="label-and-input">
+                <label for="Local/Cidade">Local/Cidade</label>
+                <input type="text" id="profile-cidade-input" class="input-field">
+            </div>
+            
+            <div class="label-and-input">
+                <label for="Sobre">Sobre (detalhada)</label>
+                <textarea type="text" style="height: 80px; resize: none;" id="profile-sobre-input" class="input-field"></textarea>
+            </div>
+            
+            <div class="gender-and-born-date">
+                <div class="label-and-input" style="width: 35%;">
+                    <label>Genero</label>
+                    <select name="select" id="profile-genero-input" class="input-field">
+                        <option value="1">Masculino</option>
+                        <option value="2">Feminino</option>
+                        <option value="3" selected>Outro</option>
+                    </select>
+                </div>
+                
+
+                    <div class="label-and-input" style="width: 60%;">
+                        <label for="Data de Nascimento">Data de Nascimento</label>
+                        <input type="date" id="profile-data-nascimento-input" class="input-field">
+                    </div>
+            </div>
+                
+                <div class="label-and-input">
+                    <label for="Sobre">Telefone para contato</label>
+                <input type="text" placeholder="" id="profile-phone-input" class="input-field">
+            </div>
+
+            <div class="label-and-input">
+                <label for="Bio">Bio (Breve descricão)</label>
+                <textarea type="text" id="profile-bio-input" style="resize: none;" class="input-field"></textarea>
+            </div>
+            <div style="width: 85%; margin-top: 15px;">
+                <button id="salvar-btn">
+                    <div id="inside-salvar-btn-circle" style="pointer-events: none;"></div>
+                    <div id="salvar-btn-text" style="pointer-events: none;">Atualizar Perfil</div>
+                </button>
+
+            </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        
+    </div>
+
+    </div>
+  
+
+  
+    <%- include("../globals/footer.ejs") %>
+
+  
+</body>
+</html>
