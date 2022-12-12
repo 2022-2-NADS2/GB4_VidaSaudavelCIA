@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Perda de senha </title>
+    <link rel="icon" href="/public/img/Logo---Vida-Saudável-e-CIA.png">
+    <link rel="stylesheet" href="/public/css/conta.css" type="text/css">
+</head>
+<body>
+    <form action="/auth/reset" method="post">
+    <div class="container">
+        <div class="card">
+            {{#if message}}
+            <div class="erro">
+            <strong >{{message}}</strong>
+            </div>
+            {{/if}}
+            {{#if messageSucess}}
+            <div class="sucesso">
+            <strong class="sucesso">{{messageSucess}}</strong>
+            </div>
+            {{/if}}
+            
+            <h1>Esqueceu a senha</h1>
+            
+            <div class="label-float">
+                <input type="email" name="email" required>
+                <label for="email">E-MAIL</label>
+            </div>
+            
+
+            <div class="justify-center">
+                <button type="submit">Enviar</button>
+            </div>
+    </form>
+            </div>
+    </div>
+</body>
